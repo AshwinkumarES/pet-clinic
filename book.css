@@ -1,0 +1,340 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+body{
+  margin-top: 81px;
+}
+
+.logo{
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px black solid;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu button{
+  font-size: 16.5px;
+  font-weight: 500;
+  margin: 18px 15px 7px 0px;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius:30px ;
+  padding: 15px 20px ;
+}
+
+.nav-home{
+  color: rgb(250, 132, 41);
+}
+
+.menu button:hover{
+  color: rgb(250, 132, 41);
+}
+
+.menu svg{
+  margin: 32px 15px 7px 0px;
+}
+
+.menu li{
+  list-style-type: none;
+}
+
+.account{
+  font-family: "Dosis", sans-serif;
+  display: none;
+  flex-direction: column;
+  width: 250px;
+  height: 140px;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.sign-in-btn{
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  background-color: rgb(255, 118, 68);
+  cursor: pointer;
+  width: fit-content;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, .2);
+  font-size: 17px;
+  transition: padding 0.5s ;
+}
+
+.sign-in-btn:hover{
+  padding:15px 22px ;
+  color: black;
+}
+
+.account p a{
+  margin: 0 3px;
+  margin-top: -20px;
+  text-decoration: none;
+}
+
+.account p a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.title{
+  text-align: center;
+}
+.booking-form{
+  margin:30px 0px;
+  
+}
+
+.booking{
+  width: 40%;
+  border: 1px  solid black;
+  border-radius: 10px;
+  margin: auto;
+  padding:20px 80px ;
+  background-color: rgb(247, 247, 247);
+}
+
+.booking h1{
+  color: black;
+  margin-bottom: 25px;
+}
+
+input {
+  margin-top:15px;
+  margin-bottom:40px;
+  padding: 12px;
+  font-size: 18px;
+  color: #333;
+  background: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+ 
+input:focus {
+  border-color: #205963;
+}
+
+#name, #email, #phone, #noOfPerson,.nameGroup, #age, #firstName, #lastName{
+  width: 96%;
+}
+#name{
+  margin-left:-2px;
+  color:rgb(51, 51, 51);
+}
+
+.label{
+  color:rgb(51, 51, 51);
+}
+select{
+  width: 100%;
+  padding:10px 20px;
+  font-size: 18px;
+  margin-bottom:40px;
+  margin-top:15px;
+}
+
+.formButton  {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color:rgb(255, 118, 68);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.formButton:hover{
+  background-color: orangered;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+.dropdown-selected {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+.dropdown-selected:focus {
+  border-color: rgb(250, 113, 64);
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color:rgb(244, 108, 58);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown .dropdown-selected {
+  padding: 10px;
+  border: 2px solid rgb(251, 117, 68);
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dropdown-option {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: green;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.dropdown-option:hover,
+.dropdown-option.selected {
+  background-color: orangered;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer{
+  display: flex;
+  background-color: rgb(16, 16, 65);
+  border-bottom: 2px solid black;
+}
+
+.footer-left{
+  flex: 1;
+}
+
+.footer-right{
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+}
+
+.footer-left p{
+  margin: 15px 10px;
+  color: white;
+  font-family:"Dosis", sans-serif ;
+}
+
+.footer-right p,h1{
+  margin-bottom: 10px;
+  color: white;
+  font-family:"Dosis", sans-serif ;
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(27, 27, 56);
+  padding-bottom: 20px;
+}
+
+.copyright-left{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.copyright-left svg{
+  padding-right: 4px;
+}
+
+.copyright p{
+  margin-top: 4px;
+  color: white;
+  font-family:"Dosis", sans-serif ;
+
+}
+
+.copyright-right{
+  margin-top:20px;
+  margin-right: 40px;
+}

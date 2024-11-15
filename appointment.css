@@ -1,0 +1,228 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+body{
+  margin-top: 81px;
+}
+
+.logo{
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px black solid;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu button{
+  font-size: 16.5px;
+  font-weight: 500;
+  margin: 18px 15px 7px 0px;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius:30px ;
+  padding: 15px 20px ;
+}
+
+.menu svg{
+  margin: 32px 15px 7px 0px;
+}
+
+.nav-home{
+  color: rgb(250, 132, 41);
+}
+
+.menu button:hover{
+  color: rgb(250, 132, 41);
+}
+
+.menu li{
+  list-style-type: none;
+}
+
+.account{
+  font-family: "Dosis", sans-serif;
+  display: none;
+  flex-direction: column;
+  width: 250px;
+  height: 140px;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.sign-in-btn{
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  background-color: rgb(255, 118, 68);
+  cursor: pointer;
+  width: fit-content;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, .2);
+  font-size: 17px;
+  transition: padding 0.5s ;
+}
+
+.sign-in-btn:hover{
+  padding:15px 22px ;
+  color: black;
+}
+
+.account p a{
+  margin: 0 3px;
+  margin-top: -20px;
+  text-decoration: none;
+}
+
+.account p a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.doctor{
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-list{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+  background-color: antiquewhite;
+  margin: 50px 50px;
+  border-radius: 20px;
+}
+
+.image{
+  height: 280px;
+  border-radius: 10px;
+}
+
+.image1{
+  height: 280px;
+  width: 90%;
+  border-radius:10px;
+}
+
+.doctor-list h1{
+  color: black;
+}
+
+.description{
+  width: 600px;
+  margin-left: -200px;
+}
+
+.description p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.price{
+  display: flex;
+}
+
+.btn{
+  display: flex;
+  width: 600px;
+}
+
+.btn a button{
+  width: 250px;
+  font-size: 17px;
+  margin: 20px 10px 20px 0;
+  padding: 10px 0;
+  color: black;
+  background-color: rgb(242, 105, 55);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: padding 0.3s;
+}
+
+.btn button:hover{
+  background-color: orangered;
+  padding: 15px 5px;
+}
+
+.footer{
+  display: flex;
+  background-color: rgb(16, 16, 65);
+  border-bottom: 2px solid black;
+}
+
+.footer-left{
+  flex: 1;
+}
+
+.footer-right{
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+}
+
+.footer-left p{
+  margin: 15px 10px;
+  color: white;
+  font-family:"Dosis", sans-serif ;
+}
+
+.footer-right p,h1{
+  margin-bottom: 10px;
+  color: white;
+  font-family:"Dosis", sans-serif ;
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(27, 27, 56);
+  padding-bottom: 20px;
+}
+
+.copyright-left{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.copyright-left svg{
+  padding-top: 4px;
+  padding-right: 4px;
+}
+
+.copyright p{
+  margin-top: 4px;
+  color: white;
+  font-family:"Dosis", sans-serif ;
+
+}
+
+.copyright-right{
+  margin-top:20px;
+  margin-right: 40px;
+}
+

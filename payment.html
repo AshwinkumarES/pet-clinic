@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <link  href="icons/app-upadate-banner_TPN-app-logo.png" rel="icon">
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="body">
+    <div class="bodyleft"> 
+      <h1 class="pageTitle"> Payment Details</h1>
+
+
+      <!--payment option-->
+      <div class="payment-option-group">
+
+        <div class="input-container">
+          <input class="cardPayment" id="payment" checked type="radio" name="radio">
+          <div class="radio-title">
+            <ion-icon name="card"></ion-icon>
+            <label for ="payment">CREDIT CARD</label>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input class="upiPayment" id="payment" type="radio" name="radio">
+          <div class="radio-title">
+            <ion-icon name="logo-paypal"></ion-icon>
+            <label for ="payment">UPI</label>
+          </div>
+        </div>
+
+      </div>
+
+    
+    <!--payment form-->
+    <div class="payment-box">
+      <div class="payment-container">
+        <h2>Checkout</h2>
+        <div class="payments">
+        <p class="subtitle">Enter your payment details below</p>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+            </div>
+            <div class="form-group-inline">
+              <div class="form-group">
+                  <label for="expiryMonth">Expiry Month / Expiry Year</label>
+                  <input type="text" id="expiryMonth" placeholder="MM / YY" maxlength="7" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input type="password" id="cvv" placeholder="123" maxlength="3" required>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="cardholderName">Cardholder's Name</label>
+                <input type="text" id="cardholderName" placeholder="Leo Das" required>
+            </div>
+            <button type="button" onclick="processPayment()">Proceed With Payment </button>
+        </form>
+        <p class="summary-text">By continuing, you accept to our Terms of Services and Privacy Policy</p>
+        <p class="summary-text">please note the payment are non-refundable</p>
+      </div>
+    </div>
+    </div>  
+    </div>
+
+    
+    <div class="bodyRight">
+      <h1>Order Summary</h1>
+      <p class="summary-text">It can help you manage and service orders before, during and after fulfilment.</p>
+      <hr>
+      <p>Sub Total<span id="amount">0</span></p>
+      <p>Balance<br>(<b>Paid offline</b>)<span id="balance">0</span> </p>
+      <p>Appointment Fee<span>₹ 100</span></p>
+      <hr>
+      <h3>Total<span id="total"> 0</span></h3>
+    </div>
+  </div>
+ 
+  <!--payment success-->
+
+  <div class="paymentStatus"></div>
+
+<script src="doctordetails.js"></script>
+<script   src="payment.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</body>
+</html>
